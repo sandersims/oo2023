@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0399da7c-4ffc-4753-b857-40f7b4bdd9ad" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../01_funktsioon/FunktsioonKodu/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01_funktsioon/FunktsioonKodu/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +48,24 @@
       <workItem from="1676027125705" duration="6872000" />
       <workItem from="1676035490574" duration="167000" />
       <workItem from="1676036926277" duration="16000" />
+      <workItem from="1676124426231" duration="272000" />
+      <workItem from="1676555283928" duration="376000" />
+      <workItem from="1676561123440" duration="50000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
