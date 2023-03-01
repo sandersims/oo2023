@@ -5,13 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0399da7c-4ffc-4753-b857-40f7b4bdd9ad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../01_funktsioon/FunktsioonKodu/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01_funktsioon/FunktsioonKodu/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_klass/Klass/src/GymTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dragon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Orc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/World.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -20,6 +35,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LXp6hSH8B7meRdRtIaIL6mUZyG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,6 +69,8 @@
       <workItem from="1676124426231" duration="272000" />
       <workItem from="1676555283928" duration="376000" />
       <workItem from="1676561123440" duration="50000" />
+      <workItem from="1676630941749" duration="7593000" />
+      <workItem from="1677685524597" duration="10000" />
     </task>
     <servers />
   </component>
