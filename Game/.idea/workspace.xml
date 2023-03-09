@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0399da7c-4ffc-4753-b857-40f7b4bdd9ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../02_klass/Klass/src/GymTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dragon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Orc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/World.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Game/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game/World.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/World.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,6 +70,9 @@
       <workItem from="1676561123440" duration="50000" />
       <workItem from="1676630941749" duration="7593000" />
       <workItem from="1677685524597" duration="10000" />
+      <workItem from="1677841327391" duration="6063000" />
+      <workItem from="1677849556921" duration="112000" />
+      <workItem from="1678371117624" duration="188000" />
     </task>
     <servers />
   </component>
