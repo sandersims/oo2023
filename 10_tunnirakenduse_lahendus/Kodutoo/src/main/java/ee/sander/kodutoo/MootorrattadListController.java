@@ -34,6 +34,5 @@ public class MootorrattadListController {
         mootorrattad.add(new Mootorrattad(id, nimi, hind, aktiivne));
         return mootorrattad;
     }
-    // localhost:8080/lisa-toode?id=8&nimi=Mullivesi&hind=2.3&aktiivne=true
 }
 
