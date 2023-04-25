@@ -1,4 +1,4 @@
-package ee.sander.kodutoo;
+package ee.adrian.kodutoo;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Mootorrattad {
+public class Laev {
     private int id;
     private String nimi;
     private double hind;

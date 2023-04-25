@@ -8,14 +8,14 @@ import java.util.List;
 
 @RestController
 public class MootorrattadListController {
-    List<Mootorrattad> mootorrattad = new ArrayList<>(Arrays.asList(
-            new Mootorrattad(1,"Kawasaki ninja h2", 30000, true),
-            new Mootorrattad(2,"BMW S1000RR", 25000, true),
-            new Mootorrattad(3,"Yamaha R1M", 27500, true)
+    List<Mootorratas> mootorrattad = new ArrayList<>(Arrays.asList(
+            new Mootorratas(1,"Kawasaki ninja h2", 30000, true),
+            new Mootorratas(2,"BMW S1000RR", 25000, true),
+            new Mootorratas(3,"Yamaha R1M", 27500, true)
     ));
 
     @GetMapping("mootorrattad")
-    public List<Mootorrattad> saaMootorrattad() {
+    public List<Mootorratas> saaMootorrattad() {
         return mootorrattad;
     }
 
@@ -26,12 +26,12 @@ public class MootorrattadListController {
     }
 
     @GetMapping("lisa-mootorratas")
-    public List<Mootorrattad> lisaMootorratasURLParameetritega(
+    public List<Mootorratas> lisaMootorratasURLParameetritega(
             @RequestParam int id,
             @RequestParam String nimi,
             @RequestParam double hind,
             @RequestParam boolean aktiivne) {
-        mootorrattad.add(new Mootorrattad(id, nimi, hind, aktiivne));
+        mootorrattad.add(new Mootorratas(id, nimi, hind, aktiivne));
         return mootorrattad;
     }
 }

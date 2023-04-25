@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MootorrattadController {
-    Mootorrattad mootorrattad = new Mootorrattad(1,"Kawasaki ninja h2", 30000, true);
+    Mootorratas mootorrattad = new Mootorratas(1,"Kawasaki ninja h2", 30000, true);
 
     @GetMapping("mootorratas")
-    public Mootorrattad saaMootorrattad() {
+    public Mootorratas saaMootorrattad() {
         return mootorrattad;
     }
 
@@ -19,7 +19,7 @@ public class MootorrattadController {
     }
 
     @GetMapping("muuda-aktiivsust")
-    public Mootorrattad muudaAktiivsust() {
+    public Mootorratas muudaAktiivsust() {
         mootorrattad.setAktiivne( !mootorrattad.isAktiivne() );
         return mootorrattad;
     }
