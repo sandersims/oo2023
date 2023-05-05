@@ -10,10 +10,16 @@ import java.util.List;
 
 @RestController
 public class TellimusController {
+
+    @Autowired
+    IsikController isikController; // Ühel ja samal mälukohal
+
+    @Autowired
+    ToodeController toodeController; // Otseühendus selle klassiga
+
     List<Toode> tellimuseTooted = new ArrayList<>(Arrays.asList(
             new Toode(3, "Sprite", 1.7),
             new Toode(3, "Sprite", 1.7)
-
     ));
     List<Toode> tellimuse2Tooted = new ArrayList<>(Arrays.asList(
             new Toode(3, "Sprite", 1.7),
@@ -41,24 +47,19 @@ public class TellimusController {
         return "Tellimus kustutatud!";
     }
 
-    @Autowired
-    IsikController isikController;
 
-    @Autowired
-    ToodeController toodeController;
 
     // POST localhost:8080/lisa-tellimus?id=9&tellijaIndex=3&tooteIndex=2
     @PostMapping("lisa-tellimus")
-    public List<Tellimus> lisaToode(
+    public List<Tellimus> lisaTellimus(
             @RequestParam int id,
             @RequestParam int tellijaIndex,
             @RequestParam int tooteIndex) {
-        // tellimused.add(new Tellimus(id, nimi, hind));
-        //IsikController isikController = new IsikController();
-        //System.out.println(isikController); //mälukoht
+//        IsikController isikController = new IsikController();
+//        System.out.println(isikController); // MÄLUKOHT     Dependency Injection
         Isik tellija = isikController.isikud.get(tellijaIndex);
 
-       // ToodeController toodeController = new ToodeController();
+//        ToodeController toodeController = new ToodeController();
         Toode tellitudToode = toodeController.tooted.get(tooteIndex);
         List<Toode> tellitudTooted = new ArrayList<>(Arrays.asList(tellitudToode));
 
@@ -67,23 +68,23 @@ public class TellimusController {
     }
 
     // POST localhost:8080/lisa-tellimus2?id=9&tellijaIndex=3&tooteIndexid=2,2,3
-
     @PostMapping("lisa-tellimus2")
-    public List<Tellimus> lisaToode2(
+    public List<Tellimus> lisaTellimus2(
             @RequestParam int id,
-            @RequestParam int tellijaIndex,
-            @RequestParam int[] tooteIndexid) {
-        Isik tellija = isikController.isikud.get(tellijaIndex);
-        {
-            List<Toode> tellitudTooted = new ArrayList<>();
-            for (int i : tooteIndexid) {
-                Toode toode = toodeController.tooted.get(i);
-                tellitudTooted.add(toode);
-            }
+            @RequestParam int tellijaId,
+            @RequestParam int[] tooteIds) {
+        Isik tellija = isikRepository.findById(tellijaId).get();
 
-            tellimused.add(new Tellimus(id, tellija, tellitudTooted));
-            return tellimused;
+        List<Toode> tellitudTooted = new ArrayList<>();
+        for (int i: tooteIds) {
+            Toode toode = toodeRepository.findById(i).get();
+            tellitudTooted.add(toode);
         }
+
+//        tellimused.add(new Tellimus(id,
+        tellimusRepository.save(new Tellimus(id, tellija, tellitudTooted));
+        return tellimusRepository.findAll();
+
     }
 
     // POST localhost:8080/lisa-tellimus3
@@ -98,6 +99,9 @@ public class TellimusController {
     @PostMapping("lisa-tellimus4")
     public List<Tellimus> lisaTellimus4(
             @RequestBody Tellimus tellimus) {
+        System.out.println(tellimus.getId());
+        System.out.println(tellimus.getTellija());
+        System.out.println(tellimus.getTooted());
         Isik isik = isikController.isikud.get(tellimus.getTellija().getId());
 
         List<Toode> tellitudTooted = new ArrayList<>();

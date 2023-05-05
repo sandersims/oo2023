@@ -1,14 +1,12 @@
 package ee.sander.uuskodutoo;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.config.AnnotationDrivenBeanDefinitionParser;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
-import java.util.function.ToDoubleBiFunction;
 
 @RestController
 public class TellimusController {
@@ -36,8 +34,6 @@ public class TellimusController {
         return "Tellimus kustutatud!";
     }
 
-
-    // POST localhost:8080/lisa-tellimus?id=9&tellijaIndex=3&tooteIndex=2
     @PostMapping("lisa-tellimus")
     public List<Tellimus> lisaMootorratas(
             @RequestParam int id,
@@ -52,6 +48,5 @@ public class TellimusController {
         tellimused.add(new Tellimus(id, tellija, tellitudmootorrattad));
         return tellimused;
     }
-    // POST localhost:8080/lisa-tellimus2?id=9&tellijaIndex=3&tooteIndexid=2,2,3
 
 }
